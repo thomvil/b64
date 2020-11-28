@@ -1,0 +1,18 @@
+[package]
+name = "b64"
+version = "0.1.0"
+authors = ["Thomas Villa <thomvil87@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+base64 = "*"
+libc = "*"
+objc = "*"
+objc_id = "*"
+objc-foundation = "*"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+panic = 'abort'
