@@ -1,20 +1,26 @@
 cargo-features = ["edition2021"]
 
 [package]
+edition = "2021"
 name = "b64"
 version = "0.1.0"
+
 authors = ["Thomas Villa <thomvil87@gmail.com>"]
-edition = "2021"
+description = "Base64 decoder CLI. Copies result to clipboard"
+homepage = "https://github.com/thomvil/b64-rs"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/thomvil/b64-rs"
 
 [dependencies]
 base64 = "*"
 libc = "*"
 objc = "*"
-objc_id = "*"
 objc-foundation = "*"
+objc_id = "*"
 
 [profile.release]
-lto = true
 codegen-units = 1
+lto = true
 opt-level = 3
 panic = 'abort'
