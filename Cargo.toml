@@ -1,8 +1,10 @@
+cargo-features = ["edition2021"]
+
 [package]
 name = "b64"
 version = "0.1.0"
 authors = ["Thomas Villa <thomvil87@gmail.com>"]
-edition = "2018"
+edition = "2021"
 
 [dependencies]
 base64 = "*"

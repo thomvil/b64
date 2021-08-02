@@ -1,0 +1,2 @@
+[build]
+target-dir = "/tmp/rust_build_artefacts/b64"

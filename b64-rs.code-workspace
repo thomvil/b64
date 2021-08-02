@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"editor.formatOnSave": true,
+		"rust-analyzer.updates.channel": "nightly",
+		"rust-analyzer.inlayHints.parameterHints": true,
+		"rust-analyzer.inlayHints.enable": true
+	}
+}
